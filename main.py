@@ -23,10 +23,11 @@ def letter_counting(text):
     lowered_string = text.lower()
     dict = {}
     for value in lowered_string:
-        if value in dict:
-            dict[value] += 1
-        else:
-            dict[value] = 1
+        if value.isalpha():
+            if value in dict:
+                dict[value] += 1
+            else:
+                dict[value] = 1
     return dict
 
 
