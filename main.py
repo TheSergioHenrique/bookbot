@@ -4,7 +4,8 @@ def main():
     number_of_words = num_words_in_book(text)
     letter_count = letter_counting(text)
     print(f"THE NUMBER OF WORDS IN THIS DOCUMENT IS: {number_of_words}.")
-    print (letter_count)
+    for character in letter_count:
+        print(f"The '{character}' character appears {letter_count[character]} times.")
 
 
     #função para pegar o texto do livro
